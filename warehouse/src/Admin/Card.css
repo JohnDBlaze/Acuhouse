@@ -1,0 +1,63 @@
+.card {
+    width:400px;
+    height:400px;
+    margin:50px;
+    margin-top: 100px;
+    border-radius:50px;
+    max-width:100%;
+    max-height:100%;
+    position:relative;
+    box-shadow:0px 0px 10px fade(#fff,80%);
+    background-size:cover !important;  
+}
+    .card::after {
+      width:100%;
+      height:100%;
+      border-radius:50px;
+      position:absolute;
+      top:0;left:0;
+      z-index:-1;
+      content:'';
+      background:inherit;
+      filter:blur(5px);
+      transform:scale(1.05);
+      opacity:0.8;
+      transition:500ms all ease-in-out 0ms;
+    }
+    .card:hover::after {
+      transform:scale(0.8);
+      opacity:0;
+    }
+    .cds{
+        background: url('https://thumbs.dreamstime.com/b/staff-label-isolated-seal-sticker-sign-retro-194917668.jpg');
+        background-position: center;
+    }
+    .cdss{
+        background:url('https://cdn5.f-cdn.com/contestentries/1733723/43055135/5e49ec7ad607a_thumb900.jpg') ;
+        margin-left:200px;
+        }
+  
+.cards{
+    display: flex;
+}
+.card-title{
+    color:black
+}
+.card:hover{
+    cursor: pointer;
+}
+  
+  
+  
+  
+  body {
+    /* background-image: url("https://www.nasdaq.com/sites/acquia.prod/files/styles/1200x500/public/2021/06/29/MicrosoftTeams-image%20%282%29_0.png?h=d1cb525d&itok=oyU7TbNw"); */
+    background-size: cover;
+    /* color:white; */
+    font-family:system-ui, sans-serif;
+    /* height:98.65vh; */
+    /* display:flex; */
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+  }
